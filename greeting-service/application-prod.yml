@@ -1,6 +1,12 @@
 spring:
   application:
     name: greetin-service
+management:
+  endpoints:
+    web:
+      exposure:
+        include:
+        - '*'
 greeting-service:
-  greeting: "Ciao"
+  greeting: "Pronto"
   default-value: "Mondo"
